@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+:root {
+    --pretoFundo: rgb(44, 44, 44);
+    --brancoFundo: rgb(228, 228, 228);
+    --pretoLegal: rgb(58, 58, 58);
+    --brancoLegal: rgb(228, 228, 228);
+    --AzulClaro: rgb(139, 139, 243);
+    --AzulEscuro: rgb(63, 63, 155);
+}
+
+.black:root{
+    --pretoFundo: rgb(228, 228, 228);
+    --brancoFundo: rgb(44, 44, 44);
+    --pretoLegal: rgb(228, 228, 228);
+    --brancoLegal: rgb(58, 58, 58) ;
+    --AzulClaro: rgb(63, 63, 155);
+    --AzulEscuro: rgb(139, 139, 243);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    color: var(--pretoLegal);
+    transition: .2s;
+
+}
+
+body{
+    background: var(--brancoFundo);
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: var(--pretoLegal);
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+main nav {
+    display: flex;
+    width: 80%;
+}
+
+main nav img{
+    width: 30%;
+    border-radius: 10px;
+}
+
+main nav h3 button
+{
+    width: 20vw;
+    color: AzulEscuro;
+}
+
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw;
+}
+
+header div~div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    width: 25vw;
+}
+
+main div h1{
+    color: var(--AzulEscuro);
+    font-weight: 500;
+}
+main span h1{
+    color: var(--AzulEscuro);
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+main button, section button, div button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 10px;
+    border: 2px solid var(--pretoLegal);
+    font-size: 1.5vw;
+    margin-top: 5vw;
+    color: var(--AzulEscuro);
+    background: var(--brancoFundo);
+}
+button ion-icon {
+    color: var(--AzulEscuro);
+}
+input{
+    width: 10%;
+    height: 120%;
+    border-radius: 50px;
+    appearance: none;
+    background: var(--AzulClaro);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+
+}
+
+input:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    border-radius: 20px;
+    height: 100%;
+    background: var(--AzulEscuro);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+input:checked:after{
+    margin-left: 50%;
+}
+
+
+.icones{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    gap: 2vw;
+}
+
+
+.icones .icon{
+    width: 6vw;
+    height: 10vh;
+}
+
+
+section{
+    width: 65vw;
+    margin-left: 50%; transform: translateX(-50%);
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.card{
+    background: var(--AzulClaro);   
+    padding: 3vh;
+
+    border-radius: 20px;
+    transform: translateX(0);
+}
+.card a{
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+}
+.card img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+#meuscards,#projetosTitulo{
+    width: 70%;
+    margin-left: 50%; transform: translateX(-50%);
+    display: flex;
+    flex-direction: column ;
+    gap: 4vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
