@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { DiAndroid, DiApple, DiCss3, DiJsBadge, DiNpm, DiGithubBadge } from "react-icons/di";
 import { FaReact, FaPython, FaPhp, FaHtml5 } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { FaComputer } from "react-icons/fa6";
+import { IoHardwareChip } from "react-icons/io5";
 
 function base() {
     return (
@@ -42,7 +42,7 @@ function base() {
                     <FaHtml5 className="icon" />
                     <DiCss3 className="icon" />
                     <DiJsBadge className="icon" />
-                    <FaComputer className="icon" />
+                    <IoHardwareChip className="icon" />
                 </motion.div>
                 <Link to='/projetos'><button>MEUS PROJETOS<ion-icon name="arrow-forward-outline"></ion-icon></button></Link>
 
