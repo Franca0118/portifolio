@@ -23,7 +23,7 @@ function Projetos() {
         <Header></Header>
         <motion.h1 
         initial={{x : -1000}}
-        animate={{x : -450 }}
+        animate={{x : 300 }}
         transition={{ duration: .2 }} id='projetosTitulo'>Meus Projetos</motion.h1>
         <div id='meuscards'>
             {
@@ -32,33 +32,37 @@ function Projetos() {
                 if (i % 2 == 0)
                 {
                         return (
+                            <a href={"https://github.com/"+projeto.full_name}> 
                             <motion.div className='card'
                             initial={{x : -2000}}
                             animate={{x : 0 }}
                             transition={{ duration: .5 }}>
-                               <a href={"https://github.com/"+projeto.full_name}> 
+                               
                                <span>
                                <img src={projeto.owner.avatar_url}/>
                                
                                </span>
                                <h2>{projeto.name}</h2>
-                                 </a>
+                                 
                             </motion.div>
+                            </a>
                         ) 
                 } else{
                     return (
+                        <a href={"https://github.com/"+projeto.full_name}> 
                         <motion.div className='card'
                         initial={{x : 2000}}
                         animate={{x : 0 }}
                         transition={{ duration: .5 }}>
-                           <a href={"https://github.com/"+projeto.full_name}> 
+                           
                            <span>
                            <img src={projeto.owner.avatar_url}/>
                            
                            </span>
                            <h2>{projeto.name}</h2>
-                             </a>
+                            
                         </motion.div>
+                        </a>
                     ) 
                 }
                }) :
