@@ -21,9 +21,13 @@ function base() {
 
                Tenho 17 anos, estou finalizando meu ensino meio conjunto ao cotmeig,
                e estuou em busca da minha primeira experiencia no mercado de trabalho, com o objetivo de
-               aprofundar meus conhecimentos auxilizar a empresa. <br /> <br />
-               Sou uma pessa que gosta muito de aprender e tenho muito insterresse na area.
-               *Texto temporario
+               aprofundar meus conhecimentos e colaborar com a empresa <br /> 
+               Tenho 17 anos, estou finalizando meu ensino meio conjunto ao cotmeig,
+               e estuou em busca da minha primeira experiencia no mercado de trabalho, com o objetivo de
+               aprofundar meus conhecimentos e colaborar com a empresa 
+               <br />
+               Texto temporario
+               
 
 
 

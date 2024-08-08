@@ -113,7 +113,7 @@ main button, section button, div button
 button ion-icon {
     color: var(--AzulEscuro);
 }
-input{
+.blackAndWhite{
     width: 10%;
     height: 120%;
     border-radius: 50px;
@@ -126,7 +126,7 @@ input{
 
 }
 
-input:after {
+.blackAndWhite:after {
     content: '';
     position: absolute;
     width: 50%;
@@ -137,8 +137,31 @@ input:after {
     transition: .3s;
 }
 
-input:checked:after{
+.blackAndWhite:checked:after{
     margin-left: 50%;
+}
+
+.PortAndEnglish
+{
+    width: 10%;
+    height: 120%;
+    border-radius: 50px;
+    appearance: none;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    
+    background: url(https://cdn-icons-png.flaticon.com/512/197/197386.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.english{
+    background: url(https://img.freepik.com/vetores-premium/bandeira-americana-ilustracao-vetorial-bandeira-dos-estados-unidos-da-america-bandeira-colorida-dos-estados-unidos-vector_750724-19387.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 

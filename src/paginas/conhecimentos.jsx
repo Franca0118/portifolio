@@ -7,6 +7,7 @@ import { DiAndroid, DiApple, DiCss3, DiJsBadge, DiNpm, DiGithubBadge } from "rea
 import { FaReact, FaPython, FaPhp, FaHtml5 } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { IoHardwareChip } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
 
 function base() {
     return (
@@ -25,7 +26,7 @@ function base() {
                 animate={{x:0}}
                 transition={{ duration: .5 }} >
                     <DiAndroid className="icon" />
-                    <DiApple className="icon" />
+                    <SiTypescript className="icon" />
                     <GrMysql className="icon" />
                     <DiNpm className="icon" />
                     <DiGithubBadge className="icon" />
