@@ -137,7 +137,7 @@ export default () => {
                 <>
                     <h1>My Know</h1>
                     {todosIcones()}
-                    <a href="/contato"><button>Contact <ion-icon name="arrow-forward-outline"></ion-icon> </button></a>
+                    <Link to='/contato'><button>Contact <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
                 </>
             )
             
@@ -147,7 +147,7 @@ export default () => {
                 <>
                 <h1>Meus Conhecimentos</h1>
                 {todosIcones()}
-                <a href="/contato"><button>Contato <ion-icon name="arrow-forward-outline"></ion-icon> </button></a>
+                <Link to='/contato'><button>Contato <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
             </>
             )
         }
