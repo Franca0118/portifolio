@@ -1,7 +1,7 @@
-import React from "react";
-import Header from './header'
-import { motion } from "framer-motion"
+import React, { useEffect, useState } from "react";
 
+import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
 
 import { SiGmail } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
@@ -9,17 +9,133 @@ import { FaInstagram, FaGithub, FaDiscord } from "react-icons/fa6";
 
 
 
-function base() {
+export default ()=>{
+    // CODIGO HEADER E SEUS BOTOES
+    const spring = {
+        type: "spring",
+        stiffness: 700,
+        damping: 30
+    };
+    function togleInglish() {
+        document.querySelector("#btnportandenglish").classList.toggle("english")
+        document.querySelector("body").classList.toggle("english2")
+    }
+
+    function escuroClaro() {
+        if (document.querySelector("html").classList.toString().includes('black')) {
+            return (
+                <motion.input className="blackAndWhite" type="checkbox" defaultChecked onClick={() => {
+                    document.querySelector("html").classList.toggle('black')
+                }} layout transition={spring} />
+            )
+        } else {
+            return (
+                <motion.input className="blackAndWhite" type="checkbox" onClick={() => {
+                    document.querySelector("html").classList.toggle('black')
+                }} layout transition={spring} />
+            )
+        }
+    }
+
+    let header = () => {
+        let [headerTraducao, setHeader] = useState(() => {
+            if (document.querySelector("body").classList.toString().includes("english2")) {
+                return <>
+                    <Link to='/'><h3>Home</h3></Link>
+                    <Link to='/sobre'><h3>About</h3></Link>
+                    <Link to='/conhecimentos'><h3>Learns</h3></Link>
+                    <Link to='/projetos'><h3>Projects</h3></Link>
+                    <Link to='/contato'><h3>Contact</h3></Link></>
+            } else {
+                return <>
+                    <Link to='/'><h3>Home</h3></Link>
+                    <Link to='/sobre'><h3>Sobre</h3></Link>
+                    <Link to='/conhecimentos'><h3>Conhecimentos</h3></Link>
+                    <Link to='/projetos'><h3>Projetos</h3></Link>
+                    <Link to='/contato'><h3>Contato</h3></Link></>
+            }
+        })
+
+        useEffect(() => {
+            if (document.querySelector("body").classList.toString().includes("english2")) {
+                document.querySelector("#btnportandenglish").classList.toggle("english")
+                document.querySelector("#btnportandenglish").checked = true
+            }
+            rederizarBotoesHeader()
+            paginaAtualTraducao()
+
+        }, [])
+
+        let rederizarBotoesHeader = () => {
+            if (document.querySelector("body").classList.toString().includes("english2")) {
+
+                setHeader(<>
+                    <Link to='/'><h3>Home</h3></Link>
+                    <Link to='/sobre'><h3>About</h3></Link>
+                    <Link to='/conhecimentos'><h3>Learns</h3></Link>
+                    <Link to='/projetos'><h3>Projects</h3></Link>
+                    <Link to='/contato'><h3>Contact</h3></Link></>)
+            } else {
+                setHeader(<>
+                    <Link to='/'><h3>Home</h3></Link>
+                    <Link to='/sobre'><h3>Sobre</h3></Link>
+                    <Link to='/conhecimentos'><h3>Conhecimentos</h3></Link>
+                    <Link to='/projetos'><h3>Projetos</h3></Link>
+                    <Link to='/contato'><h3>Contato</h3></Link></>)
+            }
+        }
+        return (
+            <header id="meuHeader">
+                <div>
+                <a href="/"><h3>João Victor França</h3></a>
+                </div>
+                <div>
+                    {escuroClaro()}
+                    <motion.input className="PortAndEnglish" id="btnportandenglish" type="checkbox" onClick={() => {
+                        togleInglish()
+                        rederizarBotoesHeader()
+                        paginaAtualTraducao()
+                    }} layout transition={spring} />
+                    {headerTraducao}
+
+                </div>
+            </header>
+        )
+    }
+    // FIM CODIGO HEADER
+
+
+
+    let [paginatraducao, settraducao] = useState()
+
+
+    let paginaAtualTraducao = () => {
+        if (document.querySelector("body").classList.toString().includes("english2")) {
+
+            settraducao(<>
+               <motion.h1 initial={{x: -1000}}
+                animate={{x: 0}}
+                transition={{ ease: "linear",duration: .5 }}>Contact me:</motion.h1>
+            </>)
+        } else {
+            settraducao(
+                <>
+                    <motion.h1 initial={{x: -1000}}
+                animate={{x: 0}}
+                transition={{ ease: "linear",duration: .5 }}>Entre em contato comigo:</motion.h1>
+                </>)
+        }
+    }
+    
+    
     return (
         <>
-            <Header></Header>
+            {header()}
 
             <section>
 
                 
-                <motion.h1 initial={{x: -1000}}
-                animate={{x: 0}}
-                transition={{ ease: "linear",duration: .5 }}>Entre em contato comigo:</motion.h1>
+                {paginatraducao}
                 <motion.div className="icones"
                 initial={{x: 1000}}
                 animate={{x: 0}}
@@ -38,4 +154,3 @@ function base() {
     )
 }
 
-export default base
