@@ -130,7 +130,7 @@ let header = () => {
 
 
 
-                            <Link to='/conhecimentos'> <button>Conhecimentos <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
+                            <Link to='/conhecimentos'> <button>know <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
                         </h3>
 
                         <img src="https://i.ibb.co/bL72Vz4/image.png" alt="" />
