@@ -147,7 +147,7 @@ let header = () => {
 
                         <h3>
                             <span><h1>Sobre mim</h1></span>
-                            <img src="./public/eu.png" alt="" />
+                            <img src="./eu.png" alt="" />
                             Tenho 17 anos, estou finalizando meu ensino meio conjunto ao cotmeig,
                             e estuou em busca da minha primeira experiencia no mercado de trabalho, com o objetivo de
                             aprofundar meus conhecimentos e colaborar com a empresa -

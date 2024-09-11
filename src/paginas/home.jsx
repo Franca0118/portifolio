@@ -146,7 +146,7 @@ export default () => {
                 <motion.img
                     initial={{ y: -700 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: .5 }} src="./public/image.png" alt="" />
+                    transition={{ duration: .5 }} src="./image.png" alt="" />
             </main>
 
         </>
