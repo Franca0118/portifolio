@@ -76,15 +76,18 @@ header{
     display: flex;
     height: 8vh;
     justify-content: space-between;
-    padding: 1.5vw;
+    padding: 2vw;
     align-items: center;
+    
 }
 
 header div~div{
-    width: 60%;
+    width: 80%;
     height: 3vw;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    
 }
 
 main{
@@ -324,5 +327,12 @@ section{
         width: 70vw;
         font-size: 1.4em;
     }
-
+    header div~div{
+        width: 65%;
+        height: 3vw;
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        
+    }
 }
