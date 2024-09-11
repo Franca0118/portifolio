@@ -83,7 +83,7 @@ let header = () => {
     }
     return (
         <header id="meuHeader">
-            <div>
+            <div id='meuNomeHeader'>
                 <a href="/"><h3>João Victor França</h3></a>
             </div>
             <div>
@@ -116,7 +116,7 @@ let header = () => {
 
                         <h3>
                             <span><h1>About me</h1></span>
-
+                            <img src="eu.png" alt="" />
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig <br>
@@ -126,14 +126,14 @@ let header = () => {
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             <br />
                             Texto temporario
-
+                            
 
 
 
                             <Link to='/conhecimentos'> <button>know <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
                         </h3>
 
-                        <img src="https://i.ibb.co/bL72Vz4/image.png" alt="" />
+                        
 
                     </nav>
                 </>
@@ -147,23 +147,22 @@ let header = () => {
 
                         <h3>
                             <span><h1>Sobre mim</h1></span>
-
+                            <img src="eu.png" alt="" />
                             Tenho 17 anos, estou finalizando meu ensino meio conjunto ao cotmeig,
                             e estuou em busca da minha primeira experiencia no mercado de trabalho, com o objetivo de
-                            aprofundar meus conhecimentos e colaborar com a empresa <br />
-                            Tenho 17 anos, estou finalizando meu ensino meio conjunto ao cotmeig,
-                            e estuou em busca da minha primeira experiencia no mercado de trabalho, com o objetivo de
-                            aprofundar meus conhecimentos e colaborar com a empresa
-                            <br />
+                            aprofundar meus conhecimentos e colaborar com a empresa -
                             Texto temporario
 
+
+
+                           
 
 
 
                             <Link to='/conhecimentos'> <button>Conhecimentos <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
                         </h3>
 
-                        <img src="https://i.ibb.co/bL72Vz4/image.png" alt="" />
+                       
 
                     </nav>
                 </>

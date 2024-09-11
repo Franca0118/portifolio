@@ -86,7 +86,7 @@ export default () => {
         }
         return (
             <header id="meuHeader">
-                <div>
+                <div id='meuNomeHeader'>
                 <a href="/"><h3>João Victor França</h3></a>
                 </div>
                 <div>
@@ -137,7 +137,7 @@ export default () => {
                 <>
                     <h1>My Know</h1>
                     {todosIcones()}
-                    <Link to='/contato'><button>Contact <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
+                    <Link to='/projetos'><button>Projects <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
                 </>
             )
             
@@ -147,7 +147,7 @@ export default () => {
                 <>
                 <h1>Meus Conhecimentos</h1>
                 {todosIcones()}
-                <Link to='/contato'><button>Contato <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
+                <Link to='/projetos'><button>Projetos <ion-icon name="arrow-forward-outline"></ion-icon> </button></Link>
             </>
             )
         }

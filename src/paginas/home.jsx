@@ -84,7 +84,7 @@ export default () => {
         }
         return (
             <header id="meuHeader">
-                <div>
+                <div id='meuNomeHeader'>
                 <a href="/"><h3>João Victor França</h3></a>
                 </div>
                 <div>
@@ -146,7 +146,7 @@ export default () => {
                 <motion.img
                     initial={{ y: -700 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: .5 }} src="https://i.ibb.co/LRpwmCy/image.png" alt="" />
+                    transition={{ duration: .5 }} src="image.png" alt="" />
             </main>
 
         </>

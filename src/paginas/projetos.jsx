@@ -83,7 +83,7 @@ export default () => {
         }
         return (
             <header id="meuHeader">
-                <div>
+                <div id='meuNomeHeader'>
                     <a href="/"><h3>João Victor França</h3></a>
                 </div>
                 <div>
@@ -112,7 +112,7 @@ export default () => {
             settraducao(<>
                 <motion.h1
                     initial={{ x: -1000 }}
-                    animate={{ x: 300 }}
+                    animate={{ x: 0 }}
                     transition={{ duration: .2 }} id='projetosTitulo'>My Projects</motion.h1>
             </>)
 
@@ -128,7 +128,7 @@ export default () => {
                 <>
                     <motion.h1
                         initial={{ x: -1000 }}
-                        animate={{ x: 300 }}
+                        animate={{ x: 0 }}
                         transition={{ duration: .2 }} id='projetosTitulo'>Meus Projetos</motion.h1>
                 </>)
 
@@ -155,8 +155,9 @@ export default () => {
         <>
             {header()}
 
-            {paginatraducao}
+            
             <div id='meuscards'>
+            {paginatraducao}
                 {
                     Meurepositorio.length > 0 ?
                         Meurepositorio.map((projeto, i) => {

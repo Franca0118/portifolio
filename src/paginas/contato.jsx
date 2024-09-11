@@ -86,7 +86,7 @@ export default ()=>{
         }
         return (
             <header id="meuHeader">
-                <div>
+                <div id='meuNomeHeader'>
                 <a href="/"><h3>João Victor França</h3></a>
                 </div>
                 <div>

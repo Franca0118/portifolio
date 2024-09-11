@@ -29,6 +29,9 @@
     color: var(--pretoLegal);
     transition: .2s;
 
+  
+   
+
 }
 
 body{
@@ -49,17 +52,21 @@ main{
 
 main nav {
     display: flex;
-    width: 80%;
+    width: 80vw;
+
+    
 }
 
 main nav img{
-    width: 30%;
+    float: right;
+    width: 40%;
     border-radius: 10px;
 }
 
 main nav h3 button
 {
-    width: 20vw;
+    width: 20em;
+    font-size: .8em;
     color: AzulEscuro;
 }
 
@@ -67,12 +74,15 @@ main nav h3 button
 header{
     
     display: flex;
+    height: 8vh;
     justify-content: space-between;
     padding: 1.5vw;
+    align-items: center;
 }
 
 header div~div{
-    width: 50%;
+    width: 60%;
+    height: 3vw;
     display: flex;
     justify-content: space-between;
 }
@@ -197,6 +207,7 @@ section{
 }
 #meuscards{
     width: 100vw;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -209,19 +220,109 @@ section{
     width: 50vw;
     background: var(--AzulClaro);   
     padding: 3vh;
-
+    font-size: 12px;
     border-radius: 20px;
     transform: translateX(0);
     display: flex;
     align-items: center;
-    gap: 15vw;
+    gap: 10vw;
 }
 
-#projetosTitulo{
-    color: var(--pretoLegal);
-    margin-bottom: 5vh;
-}
+
 
 #meuscards:last-child{
     margin-bottom: 10vh;
+}
+
+#meuHeader div~div input {
+    width: 5vw;
+    height: 2vw;
+  
+
+}
+
+
+@media screen and (max-width: 800px) {
+    main nav {
+        flex-direction: column;
+    }
+    #meuNomeHeader{
+        display: none;
+    }
+    #meuHeader{
+        height: 30vh;
+    }
+    #meuHeader div~div{
+       display: flex;
+       flex-direction: column-reverse;
+       height: 100%;
+     
+    }
+
+    #meuHeader div~div input {
+        width: 30vw;
+        height: 5vw;
+    }
+
+    main {
+        flex-direction: column;
+        width: 80vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 5vh;
+    }
+    main img{
+        width: 50vw;
+        margin: 10%;
+    }
+
+    main button {
+        width: 40vw;
+        font-size: 1.4em;
+    }
+    
+    .icones{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 20vh;
+        gap: 2vw;
+    }
+    
+    
+    .icones .icon{
+        width: 12vw;
+
+       
+        margin-bottom: .5vh;
+    }
+    
+    section{
+        width: 45vw;
+    
+        margin-left: 50%; transform: translateX(-50%);
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vh;
+        margin-bottom: 10vh;
+    }
+
+    section button {
+        width: 90%;
+        font-size: 1.4em;
+    }
+
+
+    .card{
+        width: 80vw;
+        font-size: .6em;  
+    }
+
+    #meuscards button {
+        width: 70vw;
+        font-size: 1.4em;
+    }
+
 }
