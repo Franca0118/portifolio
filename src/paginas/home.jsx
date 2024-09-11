@@ -118,7 +118,7 @@ export default () => {
                     <h3>hi, i'm</h3>
                     <h1>João Victor</h1>
                     <h2>WEB / MOBILE Developer</h2>
-                    <Link to='/sobre'><button>ABOUT <ion-icon name="arrow-forward-outline"></ion-icon></button></Link>
+                    <Link to='/sobre'><button>ABOUT ME <ion-icon name="arrow-forward-outline"></ion-icon></button></Link>
                 </motion.div>
             </>)
         } else {
@@ -131,7 +131,7 @@ export default () => {
                         <h3>Olá, sou</h3>
                         <h1>João Victor</h1>
                         <h2>Desenvolvedor WEB / MOBILE</h2>
-                        <Link to='/sobre'><button>SOBRE <ion-icon name="arrow-forward-outline"></ion-icon></button></Link>
+                        <Link to='/sobre'><button>SOBRE MIM <ion-icon name="arrow-forward-outline"></ion-icon></button></Link>
                     </motion.div>
                 </>)
         }

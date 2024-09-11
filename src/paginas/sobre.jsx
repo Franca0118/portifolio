@@ -116,7 +116,7 @@ let header = () => {
 
                         <h3>
                             <span><h1>About me</h1></span>
-                            <img src="./public/eu.png" alt="" />
+                            <img src="/eu.png" alt="" />
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig <br>
