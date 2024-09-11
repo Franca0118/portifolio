@@ -116,7 +116,7 @@ let header = () => {
 
                         <h3>
                             <span><h1>About me</h1></span>
-                            <img src="eu.png" alt="" />
+                            <img src="./public/eu.png" alt="" />
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig
                             i'am 17 years old, i studing progaming at 2 years in my school by name is cotmeig <br>
@@ -147,7 +147,7 @@ let header = () => {
 
                         <h3>
                             <span><h1>Sobre mim</h1></span>
-                            <img src="eu.png" alt="" />
+                            <img src="./public/eu.png" alt="" />
                             Tenho 17 anos, estou finalizando meu ensino meio conjunto ao cotmeig,
                             e estuou em busca da minha primeira experiencia no mercado de trabalho, com o objetivo de
                             aprofundar meus conhecimentos e colaborar com a empresa -
